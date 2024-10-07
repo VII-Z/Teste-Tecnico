@@ -1,0 +1,129 @@
+*{
+    font-family: 'Rawline', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../img/BackgroundImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#lista{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color:#FFF ;
+    padding: 18px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#lista h1{
+    color: #034C8C;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lista_form{
+    display: flex;
+    width: 100%;
+}
+
+.lista_form input{
+    background-color: transparent;
+    border: none;
+    color: #034C8C;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 4px;
+    border-bottom: 2px solid #048ABF ;
+}
+
+.lista_form input:focus-visible{
+    outline: none;
+}
+
+.lista_form .form_button{
+    border: none;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: #048ABF;
+    border-radius: 100%;
+    font-size: 18px;
+    transition: scale 0.5s ease;
+}
+
+.lista_form .form_button:hover{
+    cursor: pointer;
+    scale: 1.05;
+    background-color: #F2F2F2;
+    border: #048ABF 1px solid;
+}
+
+#tarefas{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.tarefa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #535353;
+    background-color: #F2F2F2;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.tarefa .progresso{
+    margin-right:10px ;
+}
+
+.tarefa .descricao_tarefa{
+    font-size: 1.1rem;
+    color: #535353;
+    padding: 4px 0px;
+    width: 100%;
+}
+
+.tarefa .acoes_tarefa{
+    display: flex;
+    gap: 10px;
+}
+
+.acao_button {
+    font-size: 1.1rem;
+}
+
+.acao_button.editar_button{
+    color: #03A66A;
+}
+
+.acao_button.deletar_button{
+    color: #F2A950;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    #lista{
+        width: 300px;
+    }
+    
+}
