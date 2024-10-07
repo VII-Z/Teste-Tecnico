@@ -1,7 +1,7 @@
 <?php 
 require_once('database/conn.php');
 $tarefas =[];
-$sql = $pdo -> query("SELECT * FROM tarefas");
+$sql = $pdo -> query("SELECT * FROM lista_tarefas");
 if($sql -> rowCount() > 0){
     $tarefas = $sql -> fetchAll(PDO::FETCH_ASSOC);
     var_dump($tarefas);
