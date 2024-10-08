@@ -29,13 +29,6 @@ if($sql -> rowCount() > 0){
         <div id="tarefas">
             <?php foreach($tarefas as $tarefa): ?>
             <div class="tarefa">
-                <input 
-                    type="checkbox" 
-                    name="progresso" 
-                    class="progresso"
-                    <?= $tarefa['completo'] ? 'checked':''?>
-                >
-                
                 <p class="descricao_tarefa">
                     <?=$tarefa['descricao'] ?>
                 </p>
@@ -59,7 +52,7 @@ if($sql -> rowCount() > 0){
             <?php endforeach?>
         </div>
     </div>
-    <script src='src/javascript/script.js'></script>
+    <script src="src/javascript/script.js?v=0"></script>
 </body>
 
 </html>

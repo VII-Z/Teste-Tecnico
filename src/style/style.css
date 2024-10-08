@@ -89,10 +89,6 @@ body{
     border-radius: 8px;
 }
 
-.tarefa .progresso{
-    margin-right:10px ;
-}
-
 .tarefa .descricao_tarefa{
     font-size: 1.1rem;
     color: #535353;
@@ -118,7 +114,7 @@ body{
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 @media screen and (max-width: 600px){
